@@ -1,0 +1,269 @@
+
+:root {
+  --border-color: lightgray;
+  --font-primary: "Avenir";
+  --font-secondary: "amelaryas";
+  --text-color-primary: #cbc7bb;
+  --text-color-secondary: #84072b;
+  
+
+}
+
+body {
+    
+    cursor: url('../public/kursor.png'), auto;
+    width:100%;
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+.carousel-image:hover{
+    cursor: auto;
+}
+
+.headeris {
+    padding:10px;
+    position: absolute;
+}
+
+
+.meniu {
+  padding-top: 60px;
+  padding-right: 4%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align:end;
+/*  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);*/
+  
+}
+
+.meniu .nav {
+  list-style: none;
+  padding: 0;
+}
+
+.meniu .nav-item {
+  display: inline-block;
+  
+}
+
+.meniu .nav-link {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  padding: 5px 10px;
+  min-width: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meniu .nav-link.active-link{
+color: var(--text-color-secondary);}
+
+.meniu .nav-link:hover {
+  color: var(--text-color-secondary);
+}
+
+.turinys {
+  width:100%;
+  color: var(--text-color-primary);
+}
+
+.turinys h1{
+    color: var(--text-color-secondary);
+    font-family: var(--font-secondary);
+    font-size:125px;
+    letter-spacing: 8px;
+    padding-right: 48%;
+    padding-top:10px;
+    line-height: 0.5;
+}
+
+.turinys h2{
+    color: var(--text-color-primary);
+    font-family: var(--font-secondary);
+    font-size:50px;
+    letter-spacing: 8px;
+    padding-right: 20%;
+}
+
+.turinys .ivadas{
+    text-transform: uppercase;
+    font-size:16px;
+    padding-right: 25%;
+    line-height: 1.3;
+    letter-spacing: 3px;
+}
+
+.turinys .pradinis{
+    padding-left:8%;
+    padding-top: 120px;
+    text-align:end;
+}
+
+
+.carousel-container {
+    
+  text-transform: uppercase;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-image {
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  min-width: 500px;
+}
+
+
+.carousel-image:hover {
+  transform: scale(1.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 300px;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+    top:47%;
+  left: 27%;
+}
+
+.carousel-control-next {
+    top:47%;
+  right: 27%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #84072b;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 24px;
+}
+
+.api{
+    padding-left:20%;
+    padding-top:60px;
+}
+
+.apie {
+    display: flex;
+}
+
+.apie h1{
+    font-size:15px;
+    color: var(--text-color-secondary);
+    font-family: var(--font-primary);
+    letter-spacing: 0.5px;
+    line-height:1;
+}
+
+.apie p {
+padding-left:7%;
+padding-right:2%;
+}
+
+.apie img {
+    object-fit: contain;
+    padding-right:6%;
+}
+
+
+@media (max-width: 768px) {
+    
+    .api{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .apie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding:2%;
+    }
+
+    .apie img {
+        padding-top:8px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .carousel-container {
+        transform: scale(0.8);
+    }
+    
+    .carousel-inner {
+        padding-top:40px;
+        
+    }
+
+    .turinys h1{
+        
+        font-size:100px;
+        letter-spacing: 8px;
+        padding-left: 2%;
+        padding-top:60px;
+        line-height: 0.5;
+        
+    }
+    
+    .turinys h2{
+        font-size:30px;
+        letter-spacing: 7px;
+        
+    }
+    
+    .turinys .ivadas{
+        font-size:14px;
+        text-align:center;
+        padding-left: 21%;
+        line-height: 1.3;
+        letter-spacing: 3px;
+    }
+    
+    
+    .carousel-control-prev {
+        top:50%;
+      left: 9%;
+    }
+
+    .carousel-control-next {
+        top:50%;
+      right: 9%;
+    }
+}
