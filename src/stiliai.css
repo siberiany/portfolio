@@ -1,7 +1,7 @@
 
 :root {
   --border-color: lightgray;
-  --font-primary: "Avenir";
+  --font-primary: "Sentinel";
   --font-secondary: "amelaryas";
   --text-color-primary: #cbc7bb;
   --text-color-secondary: #84072b;
@@ -267,3 +267,4 @@ padding-right:2%;
       right: 9%;
     }
 }
+
