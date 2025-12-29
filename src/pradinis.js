@@ -4,12 +4,13 @@ class Pradinis extends React.Component {
   render() {
     return (
       <><div class="pradinis">
-        <h1>Labas</h1>
-        <h2>as esu Meda</h2>
-        <p class="ivadas">Brandingo dizainas <br/>Skaitmeninis piešimas</p>
+        <h1>Welcome</h1>
+        <h2>to Garden of Art</h2>
+        <p class="ivadas">Digital Art<br/>Character Design</p>
       </div></>
     );
   }
 }
 
 export default Pradinis;
+
