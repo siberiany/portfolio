@@ -12,9 +12,9 @@ function Layoutas() {
   let kontaktu_masyvas = [""];
 
   let meniu_komandos = [
-    { adresas: "/", pavadinimas: "Pagrindinis." },
-    { adresas: "/darbai", pavadinimas: "Darbai." },
-    { adresas: "/apie", pavadinimas: "Apie." },
+    { adresas: "/", pavadinimas: "Main." },
+    { adresas: "/darbai", pavadinimas: "Portfolio." },
+    { adresas: "/apie", pavadinimas: "About me." },
   ];
 
   return (
@@ -44,3 +44,4 @@ function Layoutas() {
 }
 
 export default Layoutas;
+
