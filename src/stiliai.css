@@ -1,8 +1,8 @@
 
 :root {
   --border-color: lightgray;
-  --font-primary: "Sentinel";
-  --font-secondary: "amelaryas";
+  --font-primary: "Avenir", Verdana;
+  --font-secondary: "amelaryas", Geneva;
   --text-color-primary: #cbc7bb;
   --text-color-secondary: #84072b;
   
@@ -267,4 +267,5 @@ padding-right:2%;
       right: 9%;
     }
 }
+
 
